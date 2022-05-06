@@ -1,10 +1,8 @@
 # Customized YOLO version 4 to detect emergency vehicles
 
-Simple overview of use/purpose.
-
 ## Description
 
-We recycled the existing yolov4 algorithm so we can not only detect general cars but also detect emergency cars such as ambulance. We implemented our program by training a neural network on different types of cars, and inserted the trained network after the original yolov4 neural network. This allows the program to fine classify the categories of cars.
+Our project was motivated by the increasing demands in self-driving cars. Since the current yolov4 algorithms only include general vehicle categories such as cars and truck, we thought adding more vehicle categories would be help traffic to be more efficient and optimized. We recycled the existing yolov4 algorithm so we can not only detect general cars but also detect emergency cars such as ambulance. We implemented our program by training a neural network on different types of cars, and inserted the trained network after the original yolov4 neural network. This allows the program to fine classify the categories of cars.
 
 ## Getting Started
 
