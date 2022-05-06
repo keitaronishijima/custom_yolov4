@@ -1,19 +1,14 @@
 # custom_yolov4
 
-# Project Title
+# Customized YOLO version 4 to detect emergency vehicles
 
 Simple overview of use/purpose.
 
 ## Description
 
-An in-depth paragraph about your project and overview of use.
+We recycled the existing yolov4 algorithm so we can not only detect general cars but also detect emergency cars such as ambulance. We implemented our program by training a neural network on different types of cars, and inserted the trained network after the original yolov4 neural network. This allows the program to fine classify the categories of cars.
 
 ## Getting Started
-
-### Dependencies
-
-* Describe any prerequisites, libraries, OS version, etc., needed before installing program.
-* ex. Windows 10
 
 ### Installing
 
