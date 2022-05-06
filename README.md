@@ -1,4 +1,4 @@
-# Customized YOLO version 4 to detect emergency vehicles
+# Customized YOLO version 4 to detect emergency vehicles and objects
 
 ## Description
 
