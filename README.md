@@ -1,5 +1,3 @@
-# custom_yolov4
-
 # Customized YOLO version 4 to detect emergency vehicles
 
 Simple overview of use/purpose.
