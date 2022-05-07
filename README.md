@@ -2,7 +2,7 @@
 
 ## Description
 
-Our project was motivated by the increasing demands in self-driving cars. Since the current yolov4 algorithms only include general vehicle categories such as cars and truck, we thought adding more vehicle categories would be help traffic to be more efficient and optimized. We recycled the existing yolov4 algorithm so we can not only detect general cars but also detect emergency cars such as ambulance. We implemented our program by training a neural network on different types of cars, and inserted the trained network after the original yolov4 neural network. This allows the program to fine classify the categories of cars.
+Our project was motivated by the increasing demands in self-driving cars and technologies that support their functionalities. Since the current yolov4 algorithms only encapsulates general vehicle categories such as cars and trucks, we thought adding more vehicle categories would help traffic become more efficient and optimized. We recycled the existing yolov4 algorithm so we can not only detect general cars but also detect emergency cars such as ambulance. We implemented our program by training a neural network on different types of cars, and inserted the trained network after the original yolov4 neural network. This allows the program to fine classify the categories of cars.
 
 ## Getting Started
 
@@ -28,22 +28,12 @@ command to run if program contains helper info
 
 ## Authors
 
-Contributors names and contact info
-
-ex. Dominique Pizzie  
-ex. [@DomPizzie](https://twitter.com/dompizzie)
+Adam Goguh, Raghav Puri, Keitaro Nishijima
 
 ## Version History
 
-* 0.2
-    * Various bug fixes and optimizations
-    * See [commit change]() or See [release history]()
 * 0.1
     * Initial Release
-
-## License
-
-This project is licensed under the [NAME HERE] License - see the LICENSE.md file for details
 
 ## Acknowledgments
 
