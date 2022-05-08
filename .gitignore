@@ -4,7 +4,7 @@ food
 car
 yolov4-tiny.weights
 ambulance_model.h5
-
+car_model.h5
 # Ignore all text files
 *.txt
 
@@ -13,3 +13,6 @@ ambulance_model.h5
 
 # Ignore SASS config files
 .sass-cache
+
+checkpoints.data-00000-of-00001
+checkpoints.index

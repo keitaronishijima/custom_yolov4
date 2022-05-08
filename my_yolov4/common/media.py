@@ -161,7 +161,7 @@ def draw_bboxes(
             #img = 'food/train/banana/Image_9.jpg'
             #img = cv2.imread(img)
             img_arr = cv2.resize(image,(IMG_SIZE,IMG_SIZE))
-            reconstructed_model = tf.keras.models.load_model("ambulance_model.h5")
+            reconstructed_model = tf.keras.models.load_model("car_model.h5")
             img_arr = np.expand_dims(img_arr, axis = 0)
             res = np.squeeze(reconstructed_model.predict(img_arr))
             idx = 0

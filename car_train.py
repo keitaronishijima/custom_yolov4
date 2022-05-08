@@ -124,7 +124,7 @@ model.add(Flatten())
 #-------------------
 
 model.add(Dense(64,input_shape = x_train.shape[1:],activation="relu"))
-model.add(Dense(2,activation="softmax"))
+model.add(Dense(3,activation="softmax"))
 
 model.compile(optimizer="adam",loss = "categorical_crossentropy",metrics=["accuracy"])
 

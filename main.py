@@ -20,7 +20,7 @@ if __name__ == "__main__":
     # change the media path below to see the result
     
     
-    yolo.inference(media_path="ambulance7.jpeg")
+    yolo.inference(media_path="firetruck2.png")
     # train_path = "car/data/train"
     # validation_path = "car/data/val"
     # test_path  = "car/data/test"
