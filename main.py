@@ -20,7 +20,7 @@ if __name__ == "__main__":
     # change the media path below to see the result
     
     
-    yolo.inference(media_path="firetruck2.png")
+    yolo.inference(media_path="real_car/data/test/carr/04721.jpg")
     # train_path = "car/data/train"
     # validation_path = "car/data/val"
     # test_path  = "car/data/test"
@@ -45,7 +45,7 @@ if __name__ == "__main__":
 
     # #Comment out below to see the result for video
     # yolo.inference(
-    #     "ambulance_video.mov",
+    #     "policecar_video.mov",
     #     is_image=False,
     #     cv_apiPreference=cv2.CAP_V4L2,
     #     cv_frame_size=(640, 480),

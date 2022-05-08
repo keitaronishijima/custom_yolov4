@@ -10,9 +10,9 @@ from keras.layers import Dense,Conv2D,MaxPooling2D,Flatten,Activation,BatchNorma
 import warnings
 warnings.filterwarnings('ignore')
 
-train_path = "car/data/train"
-validation_path = "car/data/val"
-test_path  = "car/data/test"
+train_path = "real_car/data/train"
+validation_path = "real_car/data/val"
+test_path  = "real_car/data/test"
 
 categories = os.listdir(train_path)
 categories.sort()
@@ -124,7 +124,7 @@ model.add(Flatten())
 #-------------------
 
 model.add(Dense(64,input_shape = x_train.shape[1:],activation="relu"))
-model.add(Dense(3,activation="softmax"))
+model.add(Dense(2,activation="softmax"))
 
 model.compile(optimizer="adam",loss = "categorical_crossentropy",metrics=["accuracy"])
 
@@ -141,7 +141,7 @@ model.summary()
 
 #os.listdir('checkpoint_dir')
 
-model.save("ambulance_model.h5")
+model.save("real_car_model.h5")
 
 # def predict_fruit():
 #     model = Sequential

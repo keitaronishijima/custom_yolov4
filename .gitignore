@@ -5,6 +5,11 @@ car
 yolov4-tiny.weights
 ambulance_model.h5
 car_model.h5
+ambulance_video.mov
+firetruck_video.mov
+policecar_video.mov
+real_car
+real_car_model.h5
 # Ignore all text files
 *.txt
 
