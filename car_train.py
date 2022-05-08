@@ -112,10 +112,10 @@ y_test = np.array(y_test)
 
 model = Sequential()
 
-model.add(Conv2D(128,(3,3),activation="relu"))
+model.add(Conv2D(64,(3,3),activation="relu"))
 model.add(MaxPooling2D(3,3))
 
-model.add(Conv2D(128,(5,5),activation="relu"))
+model.add(Conv2D(64,(5,5),activation="relu"))
 model.add(MaxPooling2D(5,5)) 
 
 
@@ -123,7 +123,7 @@ model.add(Flatten())
 
 #-------------------
 
-model.add(Dense(128,input_shape = x_train.shape[1:],activation="relu"))
+model.add(Dense(64,input_shape = x_train.shape[1:],activation="relu"))
 model.add(Dense(2,activation="softmax"))
 
 model.compile(optimizer="adam",loss = "categorical_crossentropy",metrics=["accuracy"])
@@ -141,7 +141,7 @@ model.summary()
 
 #os.listdir('checkpoint_dir')
 
-model.save("car_model.h5")
+model.save("ambulance_model.h5")
 
 # def predict_fruit():
 #     model = Sequential
