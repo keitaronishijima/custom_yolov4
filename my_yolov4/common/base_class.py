@@ -187,18 +187,6 @@ class BaseClass:
             frame = cv2.cvtColor(frame, cv2.COLOR_RGB2BGR)
             image = self.draw_bboxes(frame, bboxes)
             
-            ### My Own Code starts here
-            #bboxes have shape (x, y, w, h, cls_id, prob)
-            # These lines are for saving extracted images.
-            num_predicted_objects = len(bboxes)
-            # for i in range(num_predicted_objects):
-            #     crop_imgs = orig_frame[int(orig_height * bboxes[i][1]) - int(orig_height * bboxes[i][3] / 2): int(orig_height * bboxes[i][1]) + int(orig_height * bboxes[i][3] / 2), int(orig_width * bboxes[i][0]) - int(orig_width * bboxes[i][2] / 2) : int(orig_width * bboxes[i][0]) + int(orig_width * bboxes[i][2]/2)]
-            #     img = Image.fromarray(crop_imgs, 'RGB')
-            #     print(tmp)
-            #     img.save("objects/" + 'out_' + str(i) + '.jpg')
-
-            ### END 
-            
             cv2.imshow("result", image)
         else:
             
@@ -214,6 +202,7 @@ class BaseClass:
                 cap.set(cv2.CAP_PROP_FOURCC, cv2.VideoWriter_fourcc(*cv_fourcc))
 
             prev_time = time.time()
+            # Uncomment below to see the live video 
             #cap = cv2.VideoCapture(0)
             cap.open(media_path)
             if cap.isOpened():

@@ -17,35 +17,12 @@ if __name__ == "__main__":
     yolo.summary(summary_type="yolo")
     yolo.summary()
 
-    # change the media path below to see the result
-    
-    
-    yolo.inference(media_path="real_car/data/test/carr/04721.jpg")
-    # train_path = "car/data/train"
-    # validation_path = "car/data/val"
-    # test_path  = "car/data/test"
+    # change the media path below to see the result for image
+    yolo.inference(media_path="cars/data/train/police_car/003_e56e8351.jpg")
 
-
-    # categories = os.listdir(train_path)
-    # categories.sort()
-    # IMG_SIZE = 100
-    # img = 'car/data/train/pickup_truck/0DL5XXBD9R5B.jpg'
-    # #img = 'food/train/banana/Image_9.jpg'
-    # img = cv2.imread(img)
-    # img_arr = cv2.resize(img,(IMG_SIZE,IMG_SIZE))
-    # reconstructed_model = tf.keras.models.load_model("ambulance_model.h5")
-    # img_arr = np.expand_dims(img_arr, axis = 0)
-    # print(img_arr.shape)
-    # res = np.squeeze(reconstructed_model.predict(img_arr))
-    # idx = 0
-    # for i in range(len(res)):
-    #     if res[i] == 1:
-    #         print(categories[i])
-    
-
-    # #Comment out below to see the result for video
+    # Comment out below to see the result for video
     # yolo.inference(
-    #     "policecar_video.mov",
+    #     "police_car_video.mp4",
     #     is_image=False,
     #     cv_apiPreference=cv2.CAP_V4L2,
     #     cv_frame_size=(640, 480),

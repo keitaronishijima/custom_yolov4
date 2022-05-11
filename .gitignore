@@ -10,6 +10,10 @@ firetruck_video.mov
 policecar_video.mov
 real_car
 real_car_model.h5
+data
+cars
+trucks
+train
 # Ignore all text files
 *.txt
 
@@ -21,3 +25,6 @@ real_car_model.h5
 
 checkpoints.data-00000-of-00001
 checkpoints.index
+
+real_car_model.h5
+trucks_model.h5

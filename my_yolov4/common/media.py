@@ -149,19 +149,18 @@ def draw_bboxes(
         
         if cls_id == 7:
             ISTRUCK == True
-            train_path = "car/data/train"
-            validation_path = "car/data/val"
-            test_path  = "car/data/test"
+            train_path = "trucks/data/train"
+            validation_path = "trucks/data/val"
+            test_path  = "trucks/data/test"
 
 
             categories = os.listdir(train_path)
             categories.sort()
             IMG_SIZE = 100
-            img = 'car/data/train/pickup_truck/0DL5XXBD9R5B.jpg'
             #img = 'food/train/banana/Image_9.jpg'
             #img = cv2.imread(img)
             img_arr = cv2.resize(image,(IMG_SIZE,IMG_SIZE))
-            reconstructed_model = tf.keras.models.load_model("car_model.h5")
+            reconstructed_model = tf.keras.models.load_model("trucks_model.h5")
             img_arr = np.expand_dims(img_arr, axis = 0)
             res = np.squeeze(reconstructed_model.predict(img_arr))
             idx = 0
@@ -193,7 +192,7 @@ def draw_bboxes(
 
             # Draw text box
             # here, names represent all 80 possible categories
-            bbox_text = "{}: {:.1%}".format(categories[cat], prob)
+            bbox_text = "{}: {:.1%}".format(names[cls_id] + " (" + categories[cat] + ")", prob)
             t_size = cv2.getTextSize(bbox_text, 0, font_size, font_thickness)[0]
             cv2.rectangle(
                 image,
@@ -219,9 +218,9 @@ def draw_bboxes(
                 lineType=cv2.LINE_AA,
             )
         elif cls_id == 2:
-            train_path = "real_car/data/train"
-            validation_path = "real_car/data/val"
-            test_path  = "real_car/data/test"
+            train_path = "cars/data/train"
+            validation_path = "cars/data/val"
+            test_path  = "cars/data/test"
 
 
             categories = os.listdir(train_path)
@@ -260,7 +259,7 @@ def draw_bboxes(
 
             # Draw text box
             # here, names represent all 80 possible categories
-            bbox_text = "{}: {:.1%}".format(categories[cat], prob)
+            bbox_text = "{}: {:.1%}".format(names[cls_id] + " (" + categories[cat] + ")", prob)
             t_size = cv2.getTextSize(bbox_text, 0, font_size, font_thickness)[0]
             cv2.rectangle(
                 image,
